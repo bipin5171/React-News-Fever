@@ -1,0 +1,14 @@
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/players">
+      {players.map((player) => (
+        <Route
+          key={player.name}
+          path={`/players/${player.name}`}
+          element={<Player player={player} />}
+        />
+      ))}
+    </Route>
+  </Routes> 
+</BrowserRouter>
