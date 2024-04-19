@@ -14,7 +14,7 @@ const App =()=> {
           
           <Routes>
           <Route path="/general"   element={<News pageSize="10" country="in" category="general" key="general" apiKey={apiKey}></News>} ></Route>
-            <Route exact  path="/React-News-Fever"   element={<News pageSize="10" country="in" category="general" key="general" apiKey={apiKey}></News>} ></Route>
+            <Route exact  path="/News-Fever-React"   element={<News pageSize="10" country="in" category="general" key="general" apiKey={apiKey}></News>} ></Route>
             <Route  exact path="/sports"   element={<News pageSize="10" country="in" category="sports" key="sports" apiKey={apiKey}></News>} ></Route>
             <Route exact  path="/science"   element={<News pageSize="10" country="in" category="science" key="science" apiKey={apiKey}></News>} ></Route>
             <Route exact  path="/health"   element={<News pageSize="10" country="in" category="health" key="health" apiKey={apiKey}></News>} ></Route>

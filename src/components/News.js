@@ -25,10 +25,12 @@ const News = (props) => {
     setArticles(parseData.articles);
     setTotalResults(parseData.totalResults);
     setLoading(false);
+    
   };
 
   useEffect(() => {
     updatenews();
+    // eslint-disable-next-line
   }, []);
 
   const handlePreviousClick = async () => {
